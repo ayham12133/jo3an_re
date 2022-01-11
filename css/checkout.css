@@ -1,0 +1,41 @@
+body{
+    background-image: url(./img/the-burgery-home-scaled.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+} 
+
+
+.details{
+   background-color: rgb(26,31,31);
+    opacity: 0.8; 
+    color: white;
+    margin-left: 200px;
+     width: 400px;
+    
+}
+
+.det{
+    text-align: center;
+    margin-top: 20%;
+}
+
+ .info{
+   text-align: center;
+     margin-top: 50px;
+     
+}
+.adr{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    margin: 10px
+}
+.phone{
+    
+}
+.no{
+    margin-right: 200px;
+    
+}

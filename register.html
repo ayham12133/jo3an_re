@@ -1,0 +1,73 @@
+<!DOCTYPE html>	
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="css/styles.css">
+        <meta name="viewport" content="width=device-width initial-scale=1.0">
+        <title>User Registration</title>
+        
+    </head>
+
+    <body>
+        <div>
+            <form method="POST" action="Untitled-1.php" class="forms" id="rForm" name="myform" onsubmit="return validation() && validation2()">
+                <div>
+                    <h1>Register</h1>
+                </div>
+               
+                <div>
+                    <input type="text" placeholder="Username" id="username" name="Username" class="in" required /><br>
+                    <input type="email" name="emails" placeholder="Email" id="email"  class="in" required /><br>
+                    <input  type="password" placeholder="Password" id="rPassword" name="Password" class="in" required /><br>
+                    <input type="password" placeholder="Confirm password" id="cPassword" name="cPassword" class="in" required /><br>
+                </div>
+               
+                <div>
+                    <input type="submit" value="Register" name="btn" id="rButn" class="in"/>
+                </div>
+           </form>
+            <script>
+        var Password=document.forms['myform']['Password'];
+                var Username=document.forms['myform']
+          var letters=/^[a-zA-Z0-9]*$/;  
+            function validation(){
+                
+                if(Password.value=='' || Password.value==null){
+                    alert("Wrong!")
+                    return false;
+                    
+                }else if(Password.value.length<6){
+                        alert("Password Must Be At Least 6 Characters...!");
+                        return false;
+                    }else if(!Password.value.match(letters)){
+                    alert("Wrong!..Password Must Contain only alphabets or numbers");
+                    return false;
+                }
+                return true;
+                
+            
+            }
+        
+        </script>
+            <script>
+        var Username=document.forms['myform']['Username'];
+          var letters=/^[a-zA-Z0-9]*$/;  
+            function validation2(){
+                
+                if(Username.value=='' || Username.value==null){
+                    alert("Wrong!")
+                    return false;
+                    
+                }else if(Username.value.length<4){
+                        alert("Username Must Be At Least 4 Characters...!");
+                        return false;
+                    }else if(!Username.value.match(letters)){
+                    alert("Wrong!..Username Must Contain only alphabets or numbers");
+                    return false;
+                }
+                return true;
+            }
+        
+        </script>
+        </div>
+    </body>
+</html>

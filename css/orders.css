@@ -1,0 +1,243 @@
+body{
+    text-align: center;
+}
+div.orders{
+color: aliceblue;
+background-color: rgb(26,31,31);
+    opacity: 0.8;
+    margin-top: 60px;
+    width: 1000px
+}
+.totalprice{
+    width: 101%;
+    padding-left: 110%;
+    margin-top: -70;
+    
+    
+}
+
+.items{
+    margin-top: -25
+}    
+.i_name , .p_name{
+    color: orange;
+    
+}  
+
+@media all and (max-width: 744px) {
+	
+	nav {
+		display: none;
+        
+	}
+	
+	#open_menu.show, #close_menu.show {
+		display: block;
+		z-index: 5;
+        
+	}
+	
+	#logo {
+		z-index: 5;
+	}
+	
+	.container.show_menu {
+		width: 100%;
+		height: 100vh;
+		/* we need these for when the page is in the welcome section, where the fixed_menu class is no longer active */
+		padding: 10px 40px;
+		position: fixed;
+		top: 0;
+		z-index: 5;
+		/* resetting the following ones */
+		transition: none;
+		border-bottom: none;
+		background-color: rgba(0, 0, 0, .9);
+		align-items: flex-start;
+	}
+	
+	nav.show_menu { 
+		position: absolute;
+		height: 100vh;
+		width: 100vw;
+		display: flex;
+		flex-flow: column nowrap;
+		justify-content: center;
+		align-items: center;
+		/* because the parent container has some padding, we need to get it out */
+		margin: -10px 0 0 -40px;		
+	}
+	
+	nav.show_menu a {
+		margin-bottom: 10px;
+	}
+	
+	nav.show_menu a:nth-of-type(5) {
+		margin-right: 10px;
+	}
+    
+}   
+@media all and (max-width: 1022px) {
+    div.orders{
+color: aliceblue;
+background-color: rgb(26,31,31);
+    opacity: 0.8;
+    margin-top: 60px;
+    width: 920px
+}
+  
+    }
+
+  @media all and (max-width: 940px) {
+        div.orders{
+color: aliceblue;
+background-color: rgb(26,31,31);
+    opacity: 0.8;
+    margin-top: 60px;
+    width: 770px
+} 
+      
+      .totalprice{
+    width: 101%;
+    padding-left: 80%;
+    margin-top: -70;
+    
+    
+}
+    
+}
+@media all and (max-width:780px) {
+        div.orders{
+color: aliceblue;
+background-color: rgb(26,31,31);
+    opacity: 0.8;
+    margin-top: 60px;
+    width: 670px
+} 
+      
+      .totalprice{
+    width: 101%;
+    padding-left: 60%;
+    margin-top: -70;
+    
+    
+}
+    .items{
+    margin-top: -25;
+        width: 400px;
+}
+}
+@media all and (max-width:685px) {
+        div.orders{
+color: aliceblue;
+background-color: rgb(26,31,31);
+    opacity: 0.8;
+    margin-top: 60px;
+    width: 470px
+} 
+      
+      .totalprice{
+    width: 101%;
+    padding-left: 27%;
+    margin-top: -70;
+    
+    
+}
+    .items{
+    margin-top: -25;
+        width: 200px;
+}
+    .i_name{
+    color: orange;
+    margin-left: -63%;
+} 
+    .p_name{
+      color: orange;  
+    }
+}
+    
+@media all and (max-width:488px) {
+        div.orders{
+color: aliceblue;
+background-color: rgb(26,31,31);
+    opacity: 0.8;
+    margin-top: 60px;
+    width: 320px
+} 
+      
+      .totalprice{
+    width: 101%;
+    padding-left: 1%;
+    margin-top: -70;
+    
+    
+}
+    .items{
+    margin-top: -25;
+        width: 100px;
+        font-size: 10
+}
+    .i_name{
+    color: orange;
+    margin-left: -85%;
+} 
+    .p_name{
+      color: orange;  
+    }
+}
+
+@media all and (max-width:387px) {
+        div.orders{
+color: aliceblue;
+background-color: rgb(26,31,31);
+    opacity: 0.8;
+    margin-top: 60px;
+    width: 276px
+} 
+      
+      .totalprice{
+    width: 86%;
+    margin-top: -70;
+    
+    
+}
+    .items{
+    margin-top: -25;
+        width: 200px;
+}
+    .i_name{
+    color: orange;
+    margin-left: -63%;
+} 
+    .p_name{
+      color: orange;  
+    }
+} 
+
+@media all and (max-width:292px) {
+        div.orders{
+color: aliceblue;
+background-color: rgb(26,31,31);
+    opacity: 0.8;
+    margin-top: 60px;
+    width: 226px
+}   
+      
+      .totalprice{
+    width: 66%;
+    margin-top: -70;
+    
+    
+}
+    .items{
+    margin-top: -25;
+        width: 100px;
+}
+    .i_name{
+    color: orange;
+    margin-left: -83%;
+} 
+    .p_name{
+      color: orange;  
+    }
+}
